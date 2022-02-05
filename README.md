@@ -13,3 +13,17 @@
 4. Para acceder al CRUD de los productos es necesario iniciar sesion con las siguientes Credenciales
     - User: admin@admin.com
     - Password: admin
+
+#SENTENCIAS SQL SOLICITADAS
+
+Select del producto con más stock:
+
+    - SELECT * FROM products ORDER BY stock  DESC LIMIT 1;
+
+
+
+Select del producto más vendido:
+
+    - SELECT *, COUNT(sales.product_id) AS ventas FROM products LEFT JOIN sales ON products.id = sales.product_id GROUP BY sales.product_id ASC LIMIT 1;
+
+
