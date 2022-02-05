@@ -10,4 +10,6 @@
 
 3. Guardar la carpeta descargada en la ruta correspondiente para acceder a ella localmente: "htdocs" si es XAMPP o "www" si es WAMP
 
-4. 
+4. Para acceder al CRUD de los productos es necesario iniciar sesion con las siguientes Credenciales
+    - User: admin@admin.com
+    - Password: admin
