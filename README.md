@@ -1,2 +1,2 @@
-# prueba_Konecta
+# INSTRUCCIONES
 Prueba Tecnica Konecta
