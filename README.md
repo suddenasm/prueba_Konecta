@@ -18,12 +18,15 @@
 
 Select del producto con más stock:
 
-    - SELECT * FROM products ORDER BY stock  DESC LIMIT 1;
+    SELECT * FROM products ORDER BY stock  DESC LIMIT 1;
 
 
 
 Select del producto más vendido:
 
-    - SELECT *, COUNT(sales.product_id) AS ventas FROM products LEFT JOIN sales ON products.id = sales.product_id GROUP BY sales.product_id ASC LIMIT 1;
+    SELECT *, COUNT(sales.product_id) AS ventas FROM products LEFT JOIN sales ON products.id = sales.product_id GROUP BY sales.product_id ASC LIMIT 1;
+
+
+De igual manera estas sentencias tambien se encuentran dentro del proxecto en un archivo de texto
 
 
