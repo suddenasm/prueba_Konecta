@@ -4,6 +4,7 @@ include('../db/connection.php');
 if (isset($_GET["id"])){
     $id = $_GET["id"];
 
+    $query = $conn->query("DELETE FROM sales WHERE product_id = '$id'");
     $query = $conn->query("DELETE FROM products WHERE id = '$id'");
 
     if (!mysqli_error($conn)){
