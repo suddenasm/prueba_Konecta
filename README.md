@@ -27,6 +27,6 @@ Select del producto más vendido:
     SELECT *, COUNT(sales.product_id) AS ventas FROM products LEFT JOIN sales ON products.id = sales.product_id GROUP BY sales.product_id ASC LIMIT 1;
 
 
-De igual manera estas sentencias tambien se encuentran dentro del proxecto en un archivo de texto
+De igual manera estas sentencias tambien se encuentran dentro del proyecto en un archivo de texto
 
 
